@@ -25,7 +25,9 @@ const useClients = () => {
 
     const { isLoading, data, isError } = useQuery(  {
         queryKey: ['todos'],
-        queryFn: getClients 
+        queryFn: getClients,
+        staleTime: 1000,
+        refetchInterval:1000 * 30,   //aquí está la magia
     }   
         
     )

@@ -7,12 +7,11 @@ npm i @tanstack/vue-query
 
 ### Prueba de refresco de la página de clientes de manera automática y pasado el tiempo indicado en caché
 
-```sh
-npm run build
-```
+const { isLoading, data, isError } = useQuery(  {
+        queryKey: ['todos'],
+        queryFn: getClients,
+        staleTime: 1000,
+        refetchInterval:1000 * 30,   //aquí está la magia
+    }   
+        
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```

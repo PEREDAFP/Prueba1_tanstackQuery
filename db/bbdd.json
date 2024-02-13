@@ -1,0 +1,9 @@
+{
+    "clientes": [
+      
+        { "id": 1, "nombre": "Client1", "nivel": "Premium" },
+        { "id": 1, "nombre": "Cliente 2", "nivel": "Elevado" },
+        { "id": 1, "nombre": "Mercadona", "nivel": "Elevado" }
+
+    ]    
+}

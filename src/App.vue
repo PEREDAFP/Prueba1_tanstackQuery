@@ -1,24 +1,16 @@
 <script setup lang="ts">
-import useClients from '@/composables/useClients'
-
-const { isLoading, data} = useClients()
-
-console.log(data)
+import { RouterView, RouterLink } from 'vue-router'
 
 </script>
 
 
 <template>
-  <div v-if="isLoading">
-    <h1>Cargando</h1>
-  </div>
-  <div v-else>
-    <h1>Los clients</h1>
-    <ul>
-      <li v-for="client in data" :key="client.id">{{ client.nombre }}</li>
-    </ul>
+    <RouterLink to="/">Inicio</RouterLink>
+    <RouterLink to="/lista1">Lista 1</RouterLink>
+    <RouterLink to="/lista2">Lista2</RouterLink>
 
-  </div>
+<RouterView/>
+
 </template>
 
 

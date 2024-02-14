@@ -6,12 +6,12 @@
       "nivel": "Premium"
     },
     {
-      "id": 1,
+      "id": 2,
       "nombre": "Cliente 2",
       "nivel": "Elevado"
     },
     {
-      "id": 1,
+      "id": 3,
       "nombre": "Mercadona",
       "nivel": "Elevado"
     }

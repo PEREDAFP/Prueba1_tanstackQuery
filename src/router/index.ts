@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import clientList from '@/components/clientList..vue'
 import clientList2 from '@/components/clientList2.vue'
-import inicioComponent from '/home/pedro/pruebas/daw2_23_24/prueba_tanstackQuery/src/components/inicioComponent.vue'
-
-
+import inicioComponent from '@/components/inicioComponent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

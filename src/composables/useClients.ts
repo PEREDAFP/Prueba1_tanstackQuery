@@ -21,7 +21,7 @@ const useClients = () => {
         queryKey: ['todos'],
         queryFn: getClients,
         staleTime: 1000,
-        refetchInterval:1000 * 30,   //aquí está la magia
+        refetchInterval:1000 * 120,   //aquí está la magia
     }   
         
     )

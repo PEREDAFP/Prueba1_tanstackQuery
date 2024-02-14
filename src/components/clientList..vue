@@ -3,8 +3,6 @@ import useClients from '@/composables/useClients'
 
 const { isLoading, data} = useClients()
 
-console.log(data)
-
 </script>
 
 

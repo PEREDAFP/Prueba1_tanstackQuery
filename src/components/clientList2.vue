@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import useClients from '@/composables/useClients'
+import useClient from '@/composables/useClient'
 
-const { isLoading, data} = useClients()
+const { isLoading, client} = useClient('2')
 
-console.log(data)
 
 </script>
 
@@ -14,9 +13,9 @@ console.log(data)
   </div>
   <div v-else>
     <h1>Los clients Lista2</h1>
-    <ul>
-      <li v-for="client in data" :key="client.id">{{ client.nombre }}</li>
-    </ul>
+    <code>
+      {{ client }}
+    </code>
 
   </div>
 </template>

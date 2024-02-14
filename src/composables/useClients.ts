@@ -20,8 +20,8 @@ const getClients = async( ):Promise<Client[]> => {
 
 const useClients = () => {
 
-    const store = useClientsStore()
-    const { clients } = storeToRefs( store )
+   // const store = useClientsStore()
+   // const { clients } = storeToRefs( store )
 
     const { isLoading, data, isError } = useQuery(  {
         queryKey: ['todos'],
@@ -31,7 +31,7 @@ const useClients = () => {
     }   
         
     )
-
+/* 
     watch( data, (clients) => {
         if( clients ){
             console.log('ha cambiado el data')
@@ -39,10 +39,10 @@ const useClients = () => {
         }
             
     },{ immediate: true });
-
+ */
 
     return {
-        clients,
+        data,
         isLoading,
         isError,
     }
